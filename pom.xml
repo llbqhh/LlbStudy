@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
          http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>LlbTest</artifactId>
+    <artifactId>LlbSdudy</artifactId>
     <packaging>pom</packaging>
     <modules>
         <module>KafkaAndSparkStreamingTest</module>
@@ -19,7 +19,7 @@
     </modules>
     <groupId>org.llbqhh</groupId>
     <version>1.0-SNAPSHOT</version>
-    <name>llb's test</name>
+    <name>llb's study</name>
     <url>http://maven.apache.org</url>
 
     <properties>
