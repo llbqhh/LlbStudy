@@ -1,0 +1,17 @@
+**/*iml*
+*.iml
+*idea*
+*.class
+**/target/**
+**/log**
+**/logs/**
+*.log
+*.pkl
+*.pyc
+**/py/dist
+*egg*
+**/scalastyle-output.xml
+*dependency-reduced-pom.xml
+*.bat
+*.sublime-workspace
+*.sublime-project
