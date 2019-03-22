@@ -16,6 +16,7 @@
         <module>StudySql</module>
         <module>StudyBigData</module>
         <module>StudyLinuxShell</module>
+        <module>HiveUDF</module>
     </modules>
     <groupId>org.llbqhh</groupId>
     <version>1.0-SNAPSHOT</version>
