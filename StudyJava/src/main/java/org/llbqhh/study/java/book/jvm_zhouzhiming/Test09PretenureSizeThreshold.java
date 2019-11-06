@@ -1,7 +1,7 @@
 package org.llbqhh.study.java.book.jvm_zhouzhiming;
 
 /**
- * 我们使用Serial垃圾收集器来测试
+ * 我们使用Serial垃圾收集器来测试：大对象直接进入老年代
  * VM参数： -XX:+UseSerialGC -verbose:gc -Xms20M -Xmx20M -Xmn10M -XX:+PrintGCDetails -XX:SurvivorRatio=8 -XX:PretenureSizeThreshold=3145728
  */
 public class Test09PretenureSizeThreshold {

@@ -1,7 +1,7 @@
 package org.llbqhh.study.java.book.jvm_zhouzhiming;
 
 /**
- * 我们使用Serial垃圾收集器来测试
+ * 我们使用Serial垃圾收集器来测试：新生代Minor GC
  * VM参数：-XX:+UseSerialGC -verbose:gc -Xms20M -Xmx20M -Xmn10M -XX:+PrintGCDetails -XX:SurvivorRatio=8
  */
 public class Test08Allocation {
