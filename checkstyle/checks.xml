@@ -40,8 +40,8 @@
         <property name="format" value="^[ \t]*import org.jetbrains.annotations.Nullable;$"/>
         <property name="message" value="Use javax.annotation.Nullable instead of org.jetbrains.annotations.Nullable"/>
     </module>
-
     <module name="TreeWalker">
+        <module name="SuppressionCommentFilter"/>
         <module name="EmptyBlock">
             <property name="option" value="text"/>
             <property name="tokens" value="

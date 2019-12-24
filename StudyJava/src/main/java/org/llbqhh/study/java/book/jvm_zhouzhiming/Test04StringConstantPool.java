@@ -12,7 +12,7 @@ public class Test04StringConstantPool {
         String str1 = new StringBuilder("计算机").append("软件").toString();
         System.out.println(str1.intern() == str1); // true
         // CHECKSTYLE:OFF
-//        System.out.println(str1.intern() == "计算机软件"); // true
+        System.out.println(str1.intern() == "计算机软件"); // true
         // CHECKSTYLE:ON
 
         // 这个例子首先strTmp这一句就已经将【测试】这个字符串在常量池中创建了
@@ -22,16 +22,16 @@ public class Test04StringConstantPool {
         String str2 = new StringBuilder("测").append("试").toString();
         System.out.println(str2.intern() == str2); // false
         // CHECKSTYLE:OFF
-//        System.out.println(str2.intern() == "测试"); // true
+        System.out.println(str2.intern() == "测试"); // true
         // CHECKSTYLE:ON
 
         // 在虚拟机启动过程中，java会被加入到字符串常量池
         // 所以这里结果和str2相同
         String str3 = new StringBuilder("ja").append("va").toString();
         System.out.println(str3.intern() == str3); // false
-        // checkstyle:off
-//        System.out.println(str3.intern() == "java"); // true
-        // checkstyle:on
+        // CHECKSTYLE:OFF
+        System.out.println(str3.intern() == "java"); // true
+        // CHECKSTYLE:ON
         /*
         运行结果：
         true
