@@ -41,7 +41,7 @@ class JoinTest3601 extends Thread {
 }
 class JoinTest3602 extends Thread {
     @Override
-    synchronized public void run() {
+    public synchronized void run() {
         System.out.println("t2 get lock and release...");
     }
 }

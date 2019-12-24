@@ -45,4 +45,3 @@ class StringLockTestThread extends Thread {
         testMethod();
     }
 }
-

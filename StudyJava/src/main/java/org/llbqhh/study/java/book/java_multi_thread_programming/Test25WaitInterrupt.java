@@ -37,7 +37,6 @@ class WaitThreadTest extends Thread{
                 lock.wait();
                 System.out.println("end wait");
             }
-
         } catch (InterruptedException e) {
             e.printStackTrace();
             System.out.println("出现异常，因为呈wait状态的线程被interrupt了");

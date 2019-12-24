@@ -21,7 +21,7 @@ public class Test20Volatile02 {
 }
 
 class  RunThread02 extends Thread {
-    volatile private boolean isRunning = true;
+    private volatile boolean isRunning = true;
 
     public boolean isRunning() {
         return isRunning;

@@ -26,7 +26,7 @@ public class Test09DirtyRead {
 }
 
 class DirtyReadThread extends Thread {
-    private DirtyReadObject dirtyReadObject ;
+    private DirtyReadObject dirtyReadObject;
     public DirtyReadThread(DirtyReadObject dirtyReadObject) {
         this.dirtyReadObject = dirtyReadObject;
     }
@@ -41,7 +41,7 @@ class DirtyReadThread extends Thread {
 class DirtyReadObject {
     public String username = "A";
     public String password = "AA";
-    synchronized public void setValue(String username, String password) {
+    public synchronized void setValue(String username, String password) {
         try {
             this.username = username;
             Thread.sleep(5000);

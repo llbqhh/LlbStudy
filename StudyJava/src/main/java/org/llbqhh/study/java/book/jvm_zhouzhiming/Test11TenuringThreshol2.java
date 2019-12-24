@@ -5,12 +5,14 @@ package org.llbqhh.study.java.book.jvm_zhouzhiming;
  * VM参数： -XX:+UseSerialGC -verbose:gc -Xms20M -Xmx20M -Xmn10M -XX:+PrintGCDetails -XX:SurvivorRatio=8 -XX:MaxTenuringThreshold=15
  */
 public class Test11TenuringThreshol2 {
-
     private static final int _1MB = 1024 * 1024;
 
     @SuppressWarnings("unused")
     public static void testTenuringThreshold() {
-        byte[] allocation1, allocation2, allocation3, allocation4;
+        byte[] allocation1;
+        byte[] allocation2;
+        byte[] allocation3;
+        byte[] allocation4;
         // allocation1+allocation2大于survivo空间一半
         allocation1 = new byte[_1MB / 4];
         allocation2 = new byte[_1MB / 4];

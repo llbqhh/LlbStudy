@@ -66,7 +66,7 @@ class SuspendThread01 extends Thread {
 class MyObject01 {
     private String username = "zs";
     private String password = "pw";
-    synchronized public void setValue(String u, String p) {
+    public synchronized void setValue(String u, String p) {
         this.username = u;
         if (Thread.currentThread().getName().equals("a")) {
             System.out.println("停止a线程！");

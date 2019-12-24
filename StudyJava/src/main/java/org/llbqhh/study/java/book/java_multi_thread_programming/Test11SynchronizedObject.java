@@ -55,8 +55,7 @@ public class Test11SynchronizedObject {
 }
 
 class SynchronizedObjectTest {
-
-    synchronized public void a() {
+    public synchronized void a() {
         System.out.println("a同步方法 begin ,thread=" + Thread.currentThread().getName());
         try {
             Thread.sleep(2000);

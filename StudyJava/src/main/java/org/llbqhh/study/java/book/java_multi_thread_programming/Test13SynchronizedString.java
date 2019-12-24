@@ -39,7 +39,8 @@ public class Test13SynchronizedString {
 class SynchronizedStringTest {
     public static void print(String str) {
         synchronized (str) {
-            for (;;) {
+//            for (;;) {
+            while (true) {
                 try {
                     System.out.println(Thread.currentThread().getName());
                     Thread.sleep(1000);

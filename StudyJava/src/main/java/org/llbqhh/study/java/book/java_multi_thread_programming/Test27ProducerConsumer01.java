@@ -53,7 +53,6 @@ class Producer2701 extends Thread{
                 ValueObject.value = value;
                 lock.notify();
             }
-
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

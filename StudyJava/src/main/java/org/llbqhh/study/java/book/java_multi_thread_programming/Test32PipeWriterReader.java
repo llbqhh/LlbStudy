@@ -1,8 +1,6 @@
 package org.llbqhh.study.java.book.java_multi_thread_programming;
 
 import java.io.IOException;
-import java.io.PipedInputStream;
-import java.io.PipedOutputStream;
 import java.io.PipedReader;
 import java.io.PipedWriter;
 

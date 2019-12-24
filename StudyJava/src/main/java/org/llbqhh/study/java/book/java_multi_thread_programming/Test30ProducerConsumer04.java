@@ -68,7 +68,7 @@ class CThread2904 extends Thread {
 
 class MyStack2904 {
     private List list = new ArrayList<>();
-    synchronized public void push() {
+    public synchronized void push() {
         try {
             if (list.size() == 1) {
                 this.wait();
@@ -80,7 +80,7 @@ class MyStack2904 {
             e.printStackTrace();
         }
     }
-    synchronized public String pop() {
+    public synchronized String pop() {
         String returnValue = "";
         try {
             while (list.size() == 0) { // 由于这里使用的是if，所以有可能在size为0时多个消费者阻塞，而在某个消费者成功消费后调用notify方法时又一次唤醒消费者，此时size已经为0，而消费者又去调用get(0)方法，导致异常

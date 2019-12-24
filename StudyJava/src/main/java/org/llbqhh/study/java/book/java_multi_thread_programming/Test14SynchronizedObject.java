@@ -35,16 +35,16 @@ class SynchronizedObjectTest01 {
         a begin
          */
     }
-    synchronized public void methodA() {
+    public synchronized void methodA() {
         System.out.println("a begin");
         boolean flag = true;
         while (flag) {
-
+            //
         }
         System.out.println("a end");
     }
 
-    synchronized public  void methodB() {
+    public synchronized void methodB() {
         System.out.println("b begin");
         System.out.println("b end");
     }
@@ -86,7 +86,7 @@ class SynchronizedObjectTest02 {
             System.out.println("a begin");
             boolean flag = true;
             while (flag) {
-
+                //
             }
             System.out.println("a end");
         }

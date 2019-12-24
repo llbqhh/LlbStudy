@@ -9,7 +9,7 @@ public class Test33AlternatePrint {
         Thread printA = new Thread() {
             @Override
             public void run() {
-                while(true) {
+                while (true) {
                     printTools.printA();
                 }
             }
@@ -17,7 +17,7 @@ public class Test33AlternatePrint {
         Thread printB = new Thread() {
             @Override
             public void run() {
-                while(true) {
+                while (true) {
                     printTools.printB();
                 }
             }
@@ -47,8 +47,8 @@ public class Test33AlternatePrint {
 }
 
 class PrintTools {
-    volatile private boolean prevIsA = false;
-    synchronized public void printA() {
+    private volatile boolean prevIsA = false;
+    public synchronized void printA() {
         try {
             while (prevIsA == true) {
                 wait();
@@ -63,7 +63,7 @@ class PrintTools {
         }
     }
 
-    synchronized public void printB() {
+    public synchronized void printB() {
         try {
             while (prevIsA == false) {
                 wait();

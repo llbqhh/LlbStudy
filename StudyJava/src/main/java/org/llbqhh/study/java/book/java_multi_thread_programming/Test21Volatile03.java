@@ -41,7 +41,6 @@ class  RunThread03 extends Thread {
             i++;
 //            System.out.println("anything");
             synchronized ("anything") {
-
             }
         }
         System.out.println("run...stop, i=" + i);

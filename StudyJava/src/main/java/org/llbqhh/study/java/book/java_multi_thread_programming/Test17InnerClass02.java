@@ -84,7 +84,7 @@ class OutClass {
             }
         }
 
-        synchronized public void method2() {
+        public synchronized void method2() {
             String threadName = Thread.currentThread().getName();
             System.out.println(threadName + "进入InnerClass1类中的method2方法");
             for (int j = 0; j < 5; j++) {
@@ -99,7 +99,7 @@ class OutClass {
         }
     }
     static class InnerClass2 {
-        synchronized public void method3() {
+        public synchronized void method3() {
             String threadName = Thread.currentThread().getName();
             System.out.println(threadName + "进入InnerClass2类中的method3方法");
             for (int k = 0; k < 5; k++) {

@@ -48,7 +48,7 @@ public class Test23VolatileSingleton {
 }
 
 class VolatileSingleton {
-    private volatile static VolatileSingleton uniqueSingleton;
+    private static volatile VolatileSingleton uniqueSingleton;
 
     private VolatileSingleton() {
     }

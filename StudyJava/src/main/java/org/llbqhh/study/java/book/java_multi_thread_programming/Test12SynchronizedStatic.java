@@ -52,7 +52,7 @@ public class Test12SynchronizedStatic {
 }
 
 class SynchronizedStaticTest {
-    synchronized public static void printA() {
+    public static synchronized void printA() {
         try {
             System.out.println(String.format("线程%s在%s进入printA", Thread.currentThread().getName(), System.currentTimeMillis()));
             Thread.sleep(3000);
@@ -62,7 +62,7 @@ class SynchronizedStaticTest {
         }
     }
 
-    synchronized public static void printB() {
+    public static synchronized void printB() {
         try {
             System.out.println(String.format("线程%s在%s进入printB", Thread.currentThread().getName(), System.currentTimeMillis()));
             Thread.sleep(3000);
@@ -72,7 +72,7 @@ class SynchronizedStaticTest {
         }
     }
 
-    synchronized public void printC() {
+    public synchronized void printC() {
         try {
             System.out.println(String.format("线程%s在%s进入printC", Thread.currentThread().getName(), System.currentTimeMillis()));
             Thread.sleep(3000);

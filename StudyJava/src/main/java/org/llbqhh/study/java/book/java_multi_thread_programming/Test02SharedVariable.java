@@ -39,7 +39,7 @@ public class Test02SharedVariable {
 class MyThread extends Thread {
     private int count = 5;
     @Override
-    synchronized public void run() {
+    public synchronized void run() {
         super.run();
         count--;
         System.out.println(String.format("由%s计算，count:%s", Thread.currentThread().getName(), count));

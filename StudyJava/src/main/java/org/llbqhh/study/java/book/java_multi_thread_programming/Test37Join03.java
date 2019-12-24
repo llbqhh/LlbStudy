@@ -53,7 +53,7 @@ class ThreadA extends Thread {
 }
 class ThreadB extends Thread {
     @Override
-    synchronized public void run() {
+    public synchronized void run() {
         try {
             System.out.println("begin b ThreadName=" + Thread.currentThread().getName() + " " + System.currentTimeMillis());
             Thread.sleep(5000);

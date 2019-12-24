@@ -43,7 +43,7 @@ class StopTest extends Thread {
             throw e;
         }
     }
-    synchronized public void print() {
+    public synchronized void print() {
         System.out.println("获取锁");
         i++;
         System.out.println("i=" + i);

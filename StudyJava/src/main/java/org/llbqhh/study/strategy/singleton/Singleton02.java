@@ -8,20 +8,20 @@ package org.llbqhh.study.strategy.singleton;
  */
 public class Singleton02 {
     // 加volatile是为了禁止指令重排序带来的问题
-    private static volatile Singleton02 INSTANCE;
+    private static volatile Singleton02 instance;
 
     private Singleton02() {
     }
 
     public static Singleton02 getInstance() {
-        if (INSTANCE == null) {
+        if (instance == null) {
             synchronized (Singleton02.class) {
-                if (INSTANCE == null) {
-                    INSTANCE = new Singleton02();
+                if (instance == null) {
+                    instance = new Singleton02();
                 }
             }
         }
-        return INSTANCE;
+        return instance;
     }
 
     public void m() {

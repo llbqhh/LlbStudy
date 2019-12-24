@@ -45,7 +45,7 @@ class ThreadTest extends Thread implements PrintThreadName {
     }
 }
 
-class RunnableTest implements Runnable,PrintThreadName {
+class RunnableTest implements Runnable, PrintThreadName {
     @Override
     public void run() {
         printThreadName();

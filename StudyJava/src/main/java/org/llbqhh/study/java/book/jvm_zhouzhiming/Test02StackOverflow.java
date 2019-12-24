@@ -6,7 +6,7 @@ package org.llbqhh.study.java.book.jvm_zhouzhiming;
 public class Test02StackOverflow {
     private static long stackLength = 1;
     public static void main(String[] args) {
-        try{
+        try {
             stackLeak();
         } catch (Throwable e) {
             System.out.println("stack length:" + stackLength);
@@ -26,7 +26,7 @@ public class Test02StackOverflow {
     }
 
     public static void stackLeak() {
-        stackLength ++;
+        stackLength++;
         stackLeak();
     }
 }

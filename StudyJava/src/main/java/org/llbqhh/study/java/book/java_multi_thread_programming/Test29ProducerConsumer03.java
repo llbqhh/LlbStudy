@@ -56,7 +56,7 @@ class CThread2903 extends Thread {
 
 class MyStack2903 {
     private List list = new ArrayList<>();
-    synchronized public void push() {
+    public synchronized void push() {
         try {
             if (list.size() == 1) {
                 this.wait();
@@ -68,7 +68,7 @@ class MyStack2903 {
             e.printStackTrace();
         }
     }
-    synchronized public String pop() {
+    public synchronized String pop() {
         String returnValue = "";
         try {
             if (list.size() == 0) {

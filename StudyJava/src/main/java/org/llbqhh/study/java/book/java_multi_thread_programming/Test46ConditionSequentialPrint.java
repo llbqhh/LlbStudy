@@ -7,7 +7,7 @@ import java.util.concurrent.locks.ReentrantLock;
  * 使用Condition实现三种输出按顺序打印
  */
 public class Test46ConditionSequentialPrint {
-    volatile private static int nextPrintWho = 1;
+    private static volatile int nextPrintWho = 1;
     private static ReentrantLock lock = new ReentrantLock();
     private static Condition conditionA = lock.newCondition();
     private static Condition conditionB = lock.newCondition();

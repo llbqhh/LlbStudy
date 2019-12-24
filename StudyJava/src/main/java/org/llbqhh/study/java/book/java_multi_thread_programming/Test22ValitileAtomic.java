@@ -22,11 +22,10 @@ public class Test22ValitileAtomic {
         count=99595
          */
     }
-
 }
 
 class MyThread22 extends Thread {
-    volatile  public static int count;
+    public static volatile int count;
     private static  void addCount() {
         for (int i = 0; i < 1000; i++) {
             count++;

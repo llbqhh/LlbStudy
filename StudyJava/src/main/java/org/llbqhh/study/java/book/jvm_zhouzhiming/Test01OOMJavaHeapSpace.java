@@ -10,7 +10,7 @@ import java.util.List;
 public class Test01OOMJavaHeapSpace {
     public static void main(String[] args) {
         List<Object> list = new ArrayList<>();
-        while(true) {
+        while (true) {
             list.add(new Object());
         }
         /*
