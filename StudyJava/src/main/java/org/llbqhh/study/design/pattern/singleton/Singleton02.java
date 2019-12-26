@@ -1,4 +1,4 @@
-package org.llbqhh.study.strategy.singleton;
+package org.llbqhh.study.design.pattern.singleton;
 
 /**
  * 双重检查锁double check

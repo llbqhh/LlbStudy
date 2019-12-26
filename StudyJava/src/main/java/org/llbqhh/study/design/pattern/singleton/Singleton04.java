@@ -1,4 +1,4 @@
-package org.llbqhh.study.strategy.singleton;
+package org.llbqhh.study.design.pattern.singleton;
 
 /**
  * 枚举方式实现，可以防止反序列化，

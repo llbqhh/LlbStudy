@@ -1,4 +1,4 @@
-package org.llbqhh.study.strategy.singleton;
+package org.llbqhh.study.design.pattern.singleton;
 
 /**
  * 静态内部类，jvm保证单例
