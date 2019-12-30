@@ -15,6 +15,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
 import java.util.concurrent.Future;
+import java.util.concurrent.TimeUnit;
 
 /**
  * Created by lilibiao on 2017/11/1.
@@ -22,7 +23,7 @@ import java.util.concurrent.Future;
 public class KafKaTest {
     private static KafkaProducer<String, byte[]> producer = null;
 
-    private static String kafkaHost = "llb-test-linux";
+    private static String kafkaHost = "localhost";
 
     static {
         //生产者配置文件，具体配置可参考ProducerConfig类源码，或者参考官网介绍
@@ -67,7 +68,7 @@ public class KafKaTest {
 
     public static void receive() {
         Properties props = new Properties();
-        props.put("bootstrap.servers", "llb-test-linux:9092");
+        props.put("bootstrap.servers", kafkaHost + ":9092");
         props.put("group.id", "test receive 1");
         props.put("enable.auto.commit", "true");
         props.put("auto.commit.interval.ms", "1000");
@@ -89,6 +90,7 @@ public class KafKaTest {
             send("myusers", new User("id" + i, "userName" + i, "password" + i));
             sendStr("mystrings", i + "");
         }
+        TimeUnit.SECONDS.sleep(3);
         receive();
     }
 }
