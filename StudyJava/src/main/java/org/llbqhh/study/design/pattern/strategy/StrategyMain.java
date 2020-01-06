@@ -3,7 +3,6 @@ package org.llbqhh.study.design.pattern.strategy;
 import java.util.Arrays;
 
 /**
- *
  * Comparator用于策略模式，它是一个FunctionalInterface函数式接口
  * 策略模式的核心是把真正执行的方法封装成类（函数）从外部传入，以便在运行时更改
  *
