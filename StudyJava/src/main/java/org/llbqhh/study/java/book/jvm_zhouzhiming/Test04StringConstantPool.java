@@ -7,7 +7,7 @@ public class Test04StringConstantPool {
     public static void main(String[] args) {
         // 首先会将【计算机】和【软件】两个字符串存入字符串常量池
         // str1这个字符串对象在堆中创建
-        // str1.intern方法会在常量池中创建【计算机软件】的常量，但因为堆中已经有了，所以不再重新创建，而是直接只想str1对象
+        // str1.intern方法会在常量池中创建【计算机软件】的常量，但因为堆中已经有了，所以不再重新创建，而是直接指向str1对象
         // 所以在这里str1.intern() == str1 的结果是true
         String str1 = new StringBuilder("计算机").append("软件").toString();
         System.out.println(str1.intern() == str1); // true
