@@ -7,7 +7,7 @@ package org.llbqhh.study.design.pattern.factory;
 public class ModernFactory extends AbstractFactory {
     @Override
     Vehicle createVehicle() {
-        return new Audi();
+        return new Car();
     }
 
     @Override
