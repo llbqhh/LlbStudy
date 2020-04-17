@@ -1,4 +1,4 @@
-package org.llbqhh.test.integer;
+package org.llbqhh.test.number;
 
 import org.junit.Test;
 
