@@ -5,6 +5,8 @@ public class 面试题0202_返回倒数第k个节点 {
         if (head == null) {
             throw  new RuntimeException("");
         }
+        // 快慢指针
+        // 快指针先走k步，然后两个指针同时往前走，当快指针指向null时，慢指针就是所求结果
         ListNode slow = head;
         ListNode fast = head;
         int length = 0;

@@ -63,12 +63,3 @@ public class 剑指Offer24_反转链表 {
         }
     }
 }
-
-class ListNode {
-    int val;
-    ListNode next;
-
-    ListNode(int x) {
-        val = x;
-    }
-}
