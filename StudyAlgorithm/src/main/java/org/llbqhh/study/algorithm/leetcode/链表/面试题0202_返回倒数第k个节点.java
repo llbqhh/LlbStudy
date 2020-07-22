@@ -1,5 +1,8 @@
 package org.llbqhh.study.algorithm.leetcode.链表;
 
+/**
+ * 快慢指针
+ */
 public class 面试题0202_返回倒数第k个节点 {
     public int kthToLast(ListNode head, int k) {
         if (head == null) {
