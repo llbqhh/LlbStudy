@@ -1,5 +1,6 @@
 package org.llbqhh.study.algorithm.leetcode.链表;
 
+// 分治法
 public class L23_合并K个排序链表 {
 //    // 迭代
 //    public ListNode mergeKLists(ListNode[] lists) {
