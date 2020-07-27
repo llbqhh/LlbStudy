@@ -21,7 +21,7 @@ public class L1_两数之和 {
     }
 
     public static void main(String[] args) {
-        int[] nums = {1,2,3,4,5,6,7};
+        int[] nums = {1, 2, 3, 4, 5, 6, 7};
         int target = 7;
         int[] re = new L1_两数之和().twoSum(nums, target);
         System.out.println(re[0] + "," + re[1]);
