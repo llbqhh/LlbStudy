@@ -1,8 +1,6 @@
 package org.llbqhh.study.algorithm.leetcode.树;
 
 import java.util.LinkedList;
-import java.util.List;
-import java.util.Queue;
 
 public class L104_二叉树的最大深度 {
 //    // 递归
@@ -34,6 +32,7 @@ public class L104_二叉树的最大深度 {
             while (size > 0) {
                 TreeNode tmp = q.poll();
                 if (tmp.left != null) {
+                    // add和offer方法的区别在于，在队列已满的情况下，add方法抛出异常，offer方法返回false
                     q.add(tmp.left);
                 }
                 if (tmp.right != null) {
