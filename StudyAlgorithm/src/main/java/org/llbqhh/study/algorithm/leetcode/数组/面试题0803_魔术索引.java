@@ -25,15 +25,37 @@ package org.llbqhh.study.algorithm.leetcode.数组;
 // Related Topics 数组 二分查找
 // 👍 52 👎 0
 public class 面试题0803_魔术索引 {
+//    public int findMagicIndex(int[] nums) {
+//        if (nums == null) {
+//            return -1;
+//        }
+//        for (int i = 0; i < nums.length; i++) {
+//            if (nums[i] == i) {
+//                return i;
+//            }
+//        }
+//        return -1;
+//    }
+
     public int findMagicIndex(int[] nums) {
-        if (nums == null) {
+        return getAnswer(nums, 0, nums.length - 1);
+    }
+    public static int getAnswer(int[] nums, int start, int end){
+        if (start > end){
             return -1;
         }
-        for (int i = 0; i < nums.length; i++) {
-            if (nums[i] == i) {
-                return i;
-            }
+        int mid = start + (end - start) / 2;
+        int result = getAnswer(nums, start, mid - 1);
+        if (result != -1){
+            return result;
+        }else if(nums[mid] == mid){
+            return mid;
         }
-        return -1;
+        return getAnswer(nums, mid + 1, end);
+    }
+
+    public static void main(String[] args) {
+        int[] nums = {0, 2, 3, 4, 5};
+        System.out.println(new 面试题0803_魔术索引().findMagicIndex(nums));
     }
 }
