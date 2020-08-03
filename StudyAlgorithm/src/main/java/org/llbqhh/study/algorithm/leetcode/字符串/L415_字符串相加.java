@@ -49,6 +49,9 @@ public class L415_字符串相加 {
     }
 
     public static void main(String[] args) {
+        System.out.println(('0' + '0'));
+        System.out.println("0".charAt(0));
+        System.out.println("5".charAt(0));
         System.out.println(new L415_字符串相加().addStrings("123", "123"));
         System.out.println(new L415_字符串相加().addStrings("5", "16"));
         System.out.println(new L415_字符串相加().addStrings("1", "9"));
