@@ -1,6 +1,4 @@
-package org.llbqhh.test.disruptor;
-
-import sun.misc.Contended;
+package org.llbqhh.test.disruptor.background;
 
 /**
  * @Author lilibiao

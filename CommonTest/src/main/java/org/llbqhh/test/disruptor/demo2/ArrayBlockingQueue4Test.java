@@ -1,4 +1,4 @@
-package org.llbqhh.test.disruptor.ability;
+package org.llbqhh.test.disruptor.demo2;
 
 import java.util.concurrent.ArrayBlockingQueue;
 
@@ -10,14 +10,14 @@ import java.util.concurrent.ArrayBlockingQueue;
 public class ArrayBlockingQueue4Test {
 
     public static void main(String[] args) {
-        final ArrayBlockingQueue<Data> queue = new ArrayBlockingQueue<>(100000000);
+        final ArrayBlockingQueue<Data> queue = new ArrayBlockingQueue<>(Constants.SIZE);
         final long startTime = System.currentTimeMillis();
         // 向容器中添加元素
         new Thread(new Runnable() {
             @Override
             public void run() {
                 long i = 0;
-                while(i < Constants.EVENT_NUM_FM) {
+                while(i < Constants.EVENT_NUM) {
                     try {
                         queue.put(new Data(i, "c"+i));
                     } catch (InterruptedException e) {
@@ -32,7 +32,7 @@ public class ArrayBlockingQueue4Test {
             @Override
             public void run() {
                 long k = 0;
-                while (k < Constants.EVENT_NUM_FM) {
+                while (k < Constants.EVENT_NUM) {
                     try {
                         queue.take();
                     } catch (InterruptedException e) {
