@@ -9,7 +9,6 @@
     <modules>
         <module>KafkaAndSparkStreamingTest</module>
         <module>CommonTest</module>
-        <module>StockTest</module>
         <module>StudyAlgorithm</module>
         <module>StudyDataStructure</module>
         <module>StudyJava</module>
